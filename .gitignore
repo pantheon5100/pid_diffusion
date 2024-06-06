@@ -1,0 +1,32 @@
+# Compiled python modules.
+*.pyc
+/cifar10
+/.hypothesis
+
+# Byte-compiled
+_pycache__/
+.cache/
+.idea/
+
+# Python egg metadata, regenerated from source files by setuptools.
+/*.egg-info
+.eggs/
+
+# PyPI distribution artifacts.
+build/
+dist/
+
+# Tests
+.pytest_cache/
+
+# Other
+*.DS_Store
+
+/experiment
+/model_zoo/
+/evaluations/*.npz
+
+/evaluations/cifar_img_fid
+/evaluations/classify_image_graph_def.pb
+
+!/model_zoo/README.md
