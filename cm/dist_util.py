@@ -26,7 +26,7 @@ def setup_dist():
         return
 
     os.environ["CUDA_VISIBLE_DEVICES"] = f"{int(MPI.COMM_WORLD.Get_rank() % GPUS_PER_NODE)},"
-    os.environ["CUDA_VISIBLE_DEVICES"] = f"6"
+
 
     comm = MPI.COMM_WORLD
     backend = "gloo" if not th.cuda.is_available() else "nccl"
