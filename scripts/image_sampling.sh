@@ -37,7 +37,7 @@
 #     --s_churn 0 \
 #     --steps 79 \
 #     --sampler oneshot \
-#     --model_path ./model_zoo/edm-imagenet-64x64-cond-adm.ckpt \
+#     --model_path ./model_zoo/pid_imagenet64.ckpt \
 #     --attention_resolutions 32,16,8  \
 #     --class_cond True \
 #     --dropout 0.1 \
@@ -94,7 +94,7 @@ OPENAI_LOGDIR=./experiment/image_sampling/CIFAREDM mpirun -np 1 python ./scripts
 #     --s_churn 0 \
 #     --steps 35 \
 #     --sampler oneshot \
-#     --model_path ./model_zoo/edm-cifar10-32x32-uncond-vp.ckpt \
+#     --model_path ./model_zoo/pid_cifar.pt \
 #     --attention_resolutions "2"  \
 #     --class_cond False \
 #     --dropout 0.0 \
