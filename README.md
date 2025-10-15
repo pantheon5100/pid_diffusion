@@ -31,13 +31,15 @@ pip install -e .
 
 #  ⚡ Get Started
 
-## 1. Prepare Distillation Teacher
+## 1. Preparing Pretrained Checkpoints
+### Teacher Models for Distillation
 For CIFAR10 and ImageNet 64x64 experiments, we use the teacher model from [EDM](https://github.com/NVlabs/edm). The released checkpoint is a pickle file, so we need to extract the weights first. Run the official image sampling [code](https://github.com/NVlabs/edm/blob/main/generate.py) to save the model's state dict.
 
 We provide the extracted checkpoints for direct use under the same license as the original EDM checkpoint [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/):
 - [EDM-CIFAR10](https://drive.google.com/file/d/1UT72TxuDcJ6F54fsBgDZDVYix1sS8vKd/view?usp=sharing)
 - [EDM-ImageNet64x64-EDM](https://drive.google.com/file/d/1sKFMEk48BHb7x7FJpPHsLxTGyIhgpCOm/view?usp=sharing)
 
+### Pretrained PID Checkpoints
 Additionally, our distilled models for these datasets are available for direct evaluation:
 - [PID-CIFAR10](https://drive.google.com/file/d/1uhJnW-vbdheHIMX2NyoqW921-f9VTuYI/view?usp=drive_link)
 - [PID-ImageNet64x64](https://drive.google.com/file/d/1crecnZxE8BwHSp8YaEzV2jpAEH4MYUb4/view?usp=drive_link)
